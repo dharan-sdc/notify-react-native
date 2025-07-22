@@ -63,7 +63,7 @@ Used service account JSON file from Firebase.
 Node.js script (getToken.js) to generate OAuth access token.
 
 Sent notification via curl or Postman:
-
+```
 POST https://fcm.googleapis.com/v1/projects/YOUR_PROJECT_ID/messages:send
 
 Headers:
@@ -81,7 +81,7 @@ Body:
   }
 }
 
-
+```
 # Troubleshooting
 
 If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
