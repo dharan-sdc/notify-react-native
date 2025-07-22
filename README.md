@@ -1,10 +1,10 @@
-# 📲 React Native Push Notification App
+#  React Native Push Notification App
 
 This project demonstrates how to build a basic React Native application that receives push notifications using **Firebase Cloud Messaging (FCM)** — even when the app is in the background or killed — similar to WhatsApp behavior.
 
 ---
 
-## ✅ Features
+##  Features
 
 - Simple and clean welcome UI
 - FCM token handling (secured on screen)
@@ -14,7 +14,7 @@ This project demonstrates how to build a basic React Native application that rec
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 - React Native
 - Firebase Cloud Messaging (FCM)
@@ -24,7 +24,7 @@ This project demonstrates how to build a basic React Native application that rec
 
 ---
 
-## 📱 App UI Overview
+##  App UI Overview
 
 1. Displays welcome message and what the app does.
 2. FCM token is fetched in the background and hidden from UI.
@@ -33,7 +33,7 @@ This project demonstrates how to build a basic React Native application that rec
 
 ---
 
-## 🔧 Native Android Integration
+##  Native Android Integration
 
 - Created a native `FirebaseService.java` in `android/app/src/main/java/.../`
 - Registered the service in `AndroidManifest.xml`:
@@ -46,6 +46,7 @@ This project demonstrates how to build a basic React Native application that rec
     <action android:name="com.google.firebase.MESSAGING_EVENT" />
   </intent-filter>
 </service>
+```
 
 ## FCM Setup
 Firebase Console: Created project & added Android app.
@@ -53,6 +54,8 @@ Firebase Console: Created project & added Android app.
 google-services.json: Placed in android/app/.
 
 FCM Token: Generated and fetched using @react-native-firebase/messaging.
+
+--- 
 
 ## Sending Notification (Manual Testing)
 Used service account JSON file from Firebase.
